@@ -22,10 +22,6 @@ offentlig. Udfyldte signaturer ligger i `personal/`, som er gitignored.
 
 - GitHub Pages fra `main`, roden. `CNAME` skal blive liggende.
 - DNS hos Simply: `assets` som CNAME til `wezimplify.github.io`. Andre records røres ikke.
-- **HTTPS mangler stadig (2026-09-28).** Domænet blev gemt i GitHub 2026-09-23, men
-  DNS-recorden fandtes først 2026-09-27, så de første tjek kunne kun fejle. Domænet er gemt
-  igen, og Settings → Pages viser "DNS check in progress". Når "Enforce HTTPS" kan klikkes:
-  slå det til og slet denne linje. Står den stadig fast efter 24 timer: fjern domænet under
-  Settings → Pages og gem det igen. Indtil da loader billederne ikke over https, og
-  signaturen virker ikke.
+- HTTPS via GitHubs Let's Encrypt-certifikat, som fornyes automatisk. "Enforce HTTPS" er
+  slået til.
 - Tjek: `curl -I https://assets.wezimplify.com/7a/mail.png` skal svare 200.
