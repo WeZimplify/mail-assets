@@ -1,2 +1,4 @@
 # filled-in signatures carry personal data - the repo is public
 /personal/
+# design drafts are a local workbench - the chosen one becomes its own folder (7b/), never overwritten
+/drafts/
